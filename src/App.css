@@ -1,3 +1,39 @@
 .App {
   text-align: center;
 }
+
+.DashboardContainer {
+  border: 1px solid black;
+  max-width: 1440px;
+  padding: 0 30px;
+  margin: 70px auto;
+  height: 600px;
+}
+
+.Dashboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.DashboardItem {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 210px;
+  padding: 0 20px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .Dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
